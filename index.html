@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cont">
+        <h1>BMI Calculator</h1>
+
+        <div class="form">
+            <label for="">Weight</label>
+            <div class="contin">
+                <input type="number" id="weightinputkg" placeholder="Enter your weight in kg">
+
+                <select name="weight" id="weight">
+                    <option value="kg">kg</option>
+                    <option value="pound">pound</option>
+                </select>
+            </div>
+
+            <label for="">Height</label>
+            <div class="contin">
+                <input type="number" id="heightinputmeter" placeholder="Enter your height in meters">
+                <select name="height" id="height">
+                    <option value="meter">meter</option>
+                    <option value="cm">centimeter</option>
+                </select>
+            </div>
+
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <div class="result">
+            <h2>Your BMI Score is: </h2>
+            <p class="status">You need to gain weight</p>
+
+            <div class="measurement">
+                <p>Underweight =&gt; 18.5</p>
+                <p>Normal Weight=18.5-24.9</p>
+                <p>Overweight=25-29.9</p>
+                <p>Obesity=BMI of 30 or greater</p>
+            </div>
+            <button onclick="window.location.reload();">Try again</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
